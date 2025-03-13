@@ -1,0 +1,24 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "test": "concurrently \"cd server && npm test\" \"cd client && npm test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arambula07/tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arambula07/tutorial/issues"
+  },
+  "homepage": "https://github.com/arambula07/tutorial#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
